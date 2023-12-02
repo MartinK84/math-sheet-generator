@@ -1,0 +1,85 @@
+<!-- templates/plus_over_10.html -->
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+    const a = [2,3,3, 4,4,4, 5,5,5,5, 6,6,6,6,6, 7,7,7,7,7,7, 8,8,8,8,8,8,8, 9,9,9,9,9,9,9,9];
+    const b = [9,9,8, 9,8,7, 9,8,7,6, 9,8,7,6,5, 9,8,7,6,5,4, 9,8,7,6,5,4,3, 9,8,7,6,5,4,3,2];
+    var ids = []
+    let i = 0;
+    while (i < a.length) {
+        ids.push(i);
+        i++;
+    }
+    ids = shuffle(ids);
+    
+
+    function shuffle(array) {
+        let currentIndex = array.length,  randomIndex;
+
+        // While there remain elements to shuffle.
+        while (currentIndex > 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+
+        return array;
+    }
+</script>
+<table style="margin-left:auto; margin-right:auto;">
+    <tr>
+        {% set idx = 0 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 1 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 2 %}
+        <td style="padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 3 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 4 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 5 %}
+        <td style="padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 6 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 7 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 8 %}
+        <td style="padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 9 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 10 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 11 %}
+        <td style="padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+    </tr>
+
+    <tr>
+        {% set idx = 12 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 13 %}
+        <td style="padding-right: 1.7em; padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 14 %}
+        <td style="padding-bottom: 1.7em;">{% include '_plus_over_10.html' %} </td>
+    </tr>
+
+    <tr>
+        {% set idx = 15 %}
+        <td style="padding-right: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 16 %}
+        <td style="padding-right: 1.7em;">{% include '_plus_over_10.html' %} </td>
+        {% set idx = 17 %}
+        <td>{% include '_plus_over_10.html' %} </td>
+    </tr>
+</table>
