@@ -1,0 +1,55 @@
+@page {
+    size: A4;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5cm;
+    margin-bottom: 1.5cm;
+}
+
+@media print {
+    @media print {
+        body {
+          zoom: 130%;
+        }
+      }
+}
+
+
+table.with_header {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.1em;
+    border: 1.5px solid #2591d8;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+table.with_header td {
+    padding: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 2px;
+    width: 0.5em;
+    text-align: center;
+}
+
+table.with_header div.box {
+    background-color: #dddddd;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #969696;
+    border-radius: 3px 3px 3px 3px;
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -4px;
+    padding-top: 3px;
+    padding-right: 1px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+}
+
+table.with_header tr.header {
+    background: #78b4dc;
+    border: 1.5px solid #2591d8;
+}
