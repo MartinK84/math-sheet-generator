@@ -1,0 +1,135 @@
+<!-- templates/plus_over_10.html -->
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+    var a = [];
+    for (var ida = 10; ida <= 99; ida++) {
+        a.push(ida);
+    }
+    var ids = [];
+    let i = 0;
+    while (i < a.length) {
+        ids.push(i);
+        i++;
+    }
+    ids = shuffle(ids);
+    
+
+    function shuffle(array) {
+        let currentIndex = array.length,  randomIndex;
+
+        // While there remain elements to shuffle.
+        while (currentIndex > 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+
+        return array;
+    }
+</script>
+<table style="margin-left:auto; margin-right:auto;">    
+    <tr>
+        {% set solution = True %}
+        {% set idx = 0 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set solution = False %}
+        {% set idx = 1 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 2 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>    
+    <tr>
+        {% set idx = 3 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 4 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 5 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 6 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 7 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 8 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 9 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 10 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 11 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 12 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 13 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 14 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 15 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 16 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 17 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 18 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 19 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 20 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 21 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 22 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 23 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 24 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 25 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 26 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 27 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 28 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 29 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 30 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 31 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 32 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+    <tr>
+        {% set idx = 33 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 34 %}
+        <td style="padding-right: 1.7em; padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+        {% set idx = 35 %}
+        <td style="padding-bottom: 0.5em;">{% include '_number_deconstruction_two_digits.html' %} </td>
+    </tr>
+</table>

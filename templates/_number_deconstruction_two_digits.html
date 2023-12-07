@@ -1,0 +1,25 @@
+<!-- templates/_number_deconstruction_two_digits.html -->
+<table class="with_header" style="border:0px">
+    <tr>
+        <td style="padding-bottom:0px">Z</td>
+        <td>  </td>
+        <td style="padding-bottom:0px">E</td>
+        <td>  </td>
+        <td></td>
+    </tr>
+    <tr>
+        {% if solution %}
+            <td><div class="box"><script>document.write(a[ids[{{idx}}]].toString()[0]+'0');</script></div></td>
+        {% else %}
+            <td><div class="box">&nbsp;&nbsp;</div></td>
+        {% endif %}
+        <td> + </td>
+        {% if solution %}
+            <td><div class="box"><script>document.write("&nbsp;" + a[ids[{{idx}}]].toString()[1]);</script></div></td>
+        {% else %}
+            <td><div class="box">&nbsp;&nbsp;</div></td>
+        {% endif %}
+        <td> = </td>
+        <td><script>document.write(a[ids[{{idx}}]]);</script></td>       
+    </tr>
+</table>
